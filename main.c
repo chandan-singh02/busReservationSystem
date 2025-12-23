@@ -10,7 +10,7 @@ int main()
         printf("\n<----------Welcome to YatraBus---------->\n\n");
         printf("1. Login\n");
         printf("2. Exit\n");
-        printf("Select one option: ");
+        printf("Please select one option: ");
         scanf("%d", &choice);
 
         if (choice == 1)
