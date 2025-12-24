@@ -7,7 +7,7 @@ struct Bus
     char destination[20];
     int totalSeats;
     int availableSeats;
-    float fare;
+    float price;
 };
 
 struct Bus buses[7] = {

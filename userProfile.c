@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "busProfile.c"
+#include "busBookingProfile.c"
+
 int userLogin();
 void userMenu();
 
@@ -29,7 +30,7 @@ int userLogin()
         return 0;
     }
 
-    printf("Login successful. Welcome, %s\n", username);
+    printf("\nLogin successful. Welcome, %s\n", username);
     return 1;
 }
 
@@ -40,31 +41,40 @@ void userMenu()
 
     while (1)
     {
-        printf("\n<------------- User Dashboard ------------->\n");
+        printf("\n<-------------------- User Dashboard Page -------------------- >\n");
         printf("1. Book Ticket\n");
         printf("2. Cancel Ticket\n");
         printf("3. Check Bus Status\n");
-        printf("4. Logout\n");
+        printf("4. Payment\n");
+        printf("5. Logout\n");
 
         printf("Select an option: ");
         scanf("%d", &userMenuOption);
 
         if (userMenuOption == 1)
         {
-            printf("Book Ticket selected\n");
+            printf("\nBook Ticket selected\n");
             bookBusTicket();
         }
         else if (userMenuOption == 2)
         {
-            printf("Cancel Ticket selected\n");
+            printf("\nCancel Ticket selected\n");
+            cancelBusTicket();
         }
         else if (userMenuOption == 3)
         {
-            printf("Check Bus Status selected\n");
+            printf("\nCheck Bus Status selected\n");
+            checkBusStatus();
         }
         else if (userMenuOption == 4)
         {
-            printf("Logging out...\n");
+            printf("\nPayment selected\n");
+            payment();
+        }
+        else if (userMenuOption == 5)
+        {
+            printf("\nLogging out...\n");
+            printf("\nLogged out successfull!\n");
             break;
         }
         else

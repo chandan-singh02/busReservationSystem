@@ -7,7 +7,7 @@ int main()
 
     for (;;)
     {
-        printf("\n<----------Welcome to YatraBus---------->\n\n");
+        printf("\n<-------------------- Welcome to YatraBus -------------------- >\n\n");
         printf("1. Login\n");
         printf("2. Exit\n");
         printf("Please select one option: ");
