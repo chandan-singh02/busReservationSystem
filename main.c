@@ -1,16 +1,23 @@
 #include <stdio.h>
 #include "userProfile.c"
 
+#define RESET "\033[0m"
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define YELLOW "\033[33m"
+#define CYAN "\033[36m"
+
 int main()
 {
     int choice;
-
     for (;;)
     {
-        printf("\n<================ Welcome to YatraBus ================>\n\n");
+        printf(CYAN "\n<================ Welcome to YatraBus ================>\n\n" RESET);
+
         printf("1. SignUp\n");
         printf("2. Login\n");
-        printf("3. Exit\n");
+        printf(RED "3. Exit\n" RESET);
+
         printf("Please select one option: ");
         scanf("%d", &choice);
 
@@ -21,7 +28,6 @@ int main()
         else if (choice == 2)
         {
             int userStatus = userLogin();
-            // printf("%d", userStatus);
             if (userStatus == 1)
             {
                 userMenu();
@@ -33,12 +39,12 @@ int main()
         }
         else if (choice == 3)
         {
-            printf("Your journey with YatraBus ends here.\n");
+            printf(GREEN "Your journey with YatraBus ends here.\n" RESET);
             break;
         }
         else
         {
-            printf("You selected invalid option!\n");
+            printf(RED "You selected invalid option!\n" RESET);
         }
     }
 
