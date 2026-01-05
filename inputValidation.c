@@ -42,9 +42,9 @@ int isValidName(char name[])
 
     for (int i = 0; i < len; i++)
     {
-        if (!isalpha(name[i]))
+        if (!(isalpha(name[i]) || name[i] == ' '))
         {
-            printf(RED "Name must contain only alphabets.\n" RESET);
+            printf(RED "Name must contain only alphabets and spaces.\n" RESET);
             return 0;
         }
     }
