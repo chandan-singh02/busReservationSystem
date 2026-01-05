@@ -17,7 +17,7 @@ This project allows users to book bus tickets, cancel tickets, check bus status,
 ### Payment (Step 1)
 ![Payment Step 1](screenshot/payment1.png)
 
-![Payment Step 2](screenshot/payment2.png)
+![Payment Step 2](screenshot/payemnt2.png)
 
 ### Ticket Cancelled
 ![Cancelled Ticket](screenshot/cancelled.png)
