@@ -6,7 +6,7 @@ This project allows users to book bus tickets, cancel tickets, check bus status,
 ## 📌 Features
 
 ### User signup & login
-![Signup Screen](screenshot/signup.png)
+![Signup Screen](screenshot/singup.png)
 
 ### Book Ticket
 ![Book Ticket](screenshot/bookticket.png)
